@@ -1,0 +1,24 @@
+
+.content {
+    background: red;
+    display: none;flex-direction: column;
+}
+.btn-activo {
+    background-color: lightgreen;
+}
+
+.response-question-class {
+    display: none;
+}
+.btnConfirmOn {
+    background-color: green;
+    color: greenyellow;
+}
+.btnConfirmOn:hover {
+    color: darkgreen;
+}
+
+
+.final-container {
+    display: none;
+}

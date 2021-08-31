@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Trivia</title>
+  </head>
+  <body>
+    <form id="form">
+      <h2>Configurar trivia</h2>
+
+      <!-- Numero de preguntas -->
+      <label for="trivia_amount">Numero de Preguntas:</label>
+      <input type="number" id="trivia_amount" min="1" max="50" value="10" />
+      <br />
+      <!-- Seleccionar catecoria -->
+      <label for="trivia_category">Seleccionar Categoría: </label>
+      <select name="trivia_category" id="trivia_category">
+        <option value="any">Cualquier Categoría</option>
+      </select>
+      <br />
+
+      <!-- Seleccionar dificultad -->
+      <label for="trivia_difficulty">Seleccionar Dificultad: </label>
+      <select id="trivia_difficulty">
+        <option value="any">Cualquier Dificultad</option>
+        <option value="easy">Fácil</option>
+        <option value="medium">Media</option>
+        <option value="hard">Difícil</option>
+      </select>
+      <br />
+
+      <!-- Seleccionar tipo -->
+      <label for="trivia_type">Tipo de Pregunta: </label>
+      <select id="trivia_type">
+        <option value="any">Cualquier Tipo</option>
+        <option value="multiple">Multiple Opción</option>
+        <option value="boolean">Verdadero / Falso</option>
+      </select>
+      <br />
+      <br />
+
+      <button type="submit">Comenzar</button>
+    </form>
+
+    <!-- preguntas container -->
+    <div class="content" id="questionsContent">
+      <p id="questionName"></p>
+      <div class="question-items">
+        <button id="1" type="button">Ans 1</button>
+        <button id="2" type="button">Ans 2</button>
+        <button id="3" type="button">Ans 3</button>
+        <button id="4" type="button">Ans 4</button>
+      </div>
+
+      <div id="response-question" class="response-question-class">
+        <p id="text-response" class="text-response-class"></p>
+      </div>
+
+      <button id="btn-confirmar">Comprobar</button>
+    </div>
+
+    <!-- Resultado container -->
+    <div id="result-container" class="final-container">
+      <h2 id="result-text">Tu resultado</h2>
+      <button id="btn-reboot">Volver a iniciar trivia</button>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
