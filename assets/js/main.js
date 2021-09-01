@@ -172,11 +172,11 @@ btnConfirmar.addEventListener("click", () => {
       responseQuestion.style.display = "block";
       responseTrueFalse ? triviaState.correctAnswers++ : null;
       responseTrueFalse
-        ? (responseQuestion.style.background = "#53db8a")
-        : (responseQuestion.style.background = "#e04c4f");
+        ? (responseQuestion.style.background = "#AAFAC8")
+        : (responseQuestion.style.background = "#FDC5F5");
       responseTrueFalse
         ? (textResponse.style.color = "#286341")
-        : (textResponse.style.color = "#87292a");
+        : (textResponse.style.color = "#AB2178");
       responseTrueFalse
         ? (textResponse.textContent = "Correcto!!")
         : (textResponse.textContent = "Incorrecto!!");

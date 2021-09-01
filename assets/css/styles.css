@@ -1,24 +1,50 @@
+body {
+    background-color: #172231;
+}
+
+.form-container {
+    background-color: #242E3C;
+    color: #0dcaf0;
+}
+
+.titulo-trivia {
+    color: white;
+}
 
 .content {
-    background: red;
+    background: #242E3C;
     display: none;flex-direction: column;
 }
 .btn-activo {
-    background-color: lightgreen;
+    background-color: #0dcaf0;
+    color: black
 }
 
 .response-question-class {
     display: none;
 }
+
+.bnt-inactivo {
+    background-color: lightgray;
+    font-weight: bold;
+    font-size: 25px;
+    color: gray;
+}
+.bnt-inactivo:hover {
+    color: gray;
+}
+.pregunta {
+    color: white
+}
 .btnConfirmOn {
-    background-color: green;
-    color: greenyellow;
+    background-color: #0dcaf0;
+    color: white;
 }
 .btnConfirmOn:hover {
-    color: darkgreen;
+    color: darkslategrey;
 }
-
 
 .final-container {
     display: none;
+    color: white;
 }

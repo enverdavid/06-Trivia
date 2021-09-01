@@ -3,27 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Trivia</title>
   </head>
   <body>
-    <form id="form">
-      <h2>Configurar trivia</h2>
+    <form id="form" class="container m-5 form-container p-5">
+      <h2 class="titulo-trivia mb-4">Configurar trivia</h2>
 
       <!-- Numero de preguntas -->
       <label for="trivia_amount">Numero de Preguntas:</label>
-      <input type="number" id="trivia_amount" min="1" max="50" value="10" />
+      <input type="number" id="trivia_amount" class="form-control" min="1" max="50" value="10" />
       <br />
       <!-- Seleccionar catecoria -->
       <label for="trivia_category">Seleccionar Categoría: </label>
-      <select name="trivia_category" id="trivia_category">
+      <select name="trivia_category" id="trivia_category" class="form-select">
         <option value="any">Cualquier Categoría</option>
       </select>
       <br />
 
       <!-- Seleccionar dificultad -->
       <label for="trivia_difficulty">Seleccionar Dificultad: </label>
-      <select id="trivia_difficulty">
+      <select id="trivia_difficulty" class="form-select">
         <option value="any">Cualquier Dificultad</option>
         <option value="easy">Fácil</option>
         <option value="medium">Media</option>
@@ -33,7 +34,7 @@
 
       <!-- Seleccionar tipo -->
       <label for="trivia_type">Tipo de Pregunta: </label>
-      <select id="trivia_type">
+      <select id="trivia_type" class="form-select">
         <option value="any">Cualquier Tipo</option>
         <option value="multiple">Multiple Opción</option>
         <option value="boolean">Verdadero / Falso</option>
@@ -41,30 +42,30 @@
       <br />
       <br />
 
-      <button type="submit">Comenzar</button>
+      <button type="submit" class="btn btn-info">Comenzar</button>
     </form>
 
     <!-- preguntas container -->
-    <div class="content" id="questionsContent">
-      <p id="questionName"></p>
-      <div class="question-items">
-        <button id="1" type="button">Ans 1</button>
-        <button id="2" type="button">Ans 2</button>
-        <button id="3" type="button">Ans 3</button>
-        <button id="4" type="button">Ans 4</button>
+    <div class="content p-4 mt-4 container mt-5" id="questionsContent">
+      <h3 id="questionName" class="pregunta mt-4 mb-4"></h3>
+      <div class="question-items mb-4">
+        <button id="1" type="button" class="m-1 btn btn-outline-info">Ans 1</button>
+        <button id="2" type="button" class="m-1 btn btn-outline-info">Ans 2</button>
+        <button id="3" type="button" class="m-1 btn btn-outline-info">Ans 3</button>
+        <button id="4" type="button" class="m-1 btn btn-outline-info">Ans 4</button>
       </div>
 
       <div id="response-question" class="response-question-class">
-        <p id="text-response" class="text-response-class"></p>
+        <h6 id="text-response" class="text-response-class m-5 text-center"></h6>
       </div>
 
-      <button id="btn-confirmar">Comprobar</button>
+      <button id="btn-confirmar" class="btn bnt-inactivo">Comprobar</button>
     </div>
 
     <!-- Resultado container -->
-    <div id="result-container" class="final-container">
+    <div id="result-container" class="final-container text-center p-5">
       <h2 id="result-text">Tu resultado</h2>
-      <button id="btn-reboot">Volver a iniciar trivia</button>
+      <button id="btn-reboot" class="btn btn-info mt-5">Volver a iniciar trivia</button>
     </div>
 
     <script src="./assets/js/main.js"></script>
